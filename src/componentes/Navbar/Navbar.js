@@ -4,7 +4,8 @@ import styled from 'styled-components'
 export const Navbar = ()=>{
     return(
         <Titulo>
-         <Logo>    
+         <Logo>
+                
         </Logo>   
         <NavWrapper></NavWrapper>
         </Titulo>
