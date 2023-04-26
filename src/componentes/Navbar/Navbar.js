@@ -5,7 +5,9 @@ export const Navbar = () => {
   return (
     <GeneralWrapper>
       <Titulo>
-        <Logo></Logo>
+        <Logo>
+          <img src="./imaegnes/logo-mientras.jpeg"></img>
+        </Logo>
         <NavWrapper>
           <Lista>
             <ContainerListNavigation>

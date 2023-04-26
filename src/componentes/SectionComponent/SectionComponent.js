@@ -25,7 +25,6 @@ const SectionWrapper = styled.section`
   content: "";
   height: 700px;
   width: 100%;
-  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,10 +41,10 @@ const ContentOne = styled.div`
   flex-direction: column;
   align-items: center;
   padding-left: 100px;
-  font-size: 43px;
+  font-size: 60px;
   color: green;
   font-family: "Josefin Sans", Sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 `;
 const ContentTwo = styled.div`
   width: 50%;
