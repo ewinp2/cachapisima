@@ -13,7 +13,7 @@ export const SectionComponentFour = () => {
       <Container>
         <BoxContent>
           {listElements.map((element) => (
-            <BoxWrapper key={element}>
+            <BoxWrapper key={element.listElement}>
               <ListElementWrapper>
                 <ListElement>{element.listElement}</ListElement>
               </ListElementWrapper>
