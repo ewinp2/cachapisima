@@ -2,42 +2,26 @@ import React from "react";
 import styled from "styled-components";
 
 export const SectionComponentFour = () => {
+  const listElements = [
+    { listElement: "13", listElementSubtitle: "Platos Deliciosos" },
+    { listElement: "1", listElementSubtitle: "Restaurant" },
+    { listElement: "60K", listElementSubtitle: "Platos Servidos" },
+    { listElement: "89K", listElementSubtitle: "Clientes felices" },
+  ];
   return (
     <BackgraoundSection>
       <Container>
         <BoxContent>
-          <Box1>
-            <Box1_1>
-              <Box1_1_3_4>13</Box1_1_3_4>
-            </Box1_1>
-            <Box1_1>
-              <Box1_1_3>Platos Deliciosos</Box1_1_3>
-            </Box1_1>
-          </Box1>
-          <Box1>
-            <Box1_1>
-              <Box1_1_3_4>1</Box1_1_3_4>
-            </Box1_1>
-            <Box1_1>
-              <Box1_1_3>Restaurant</Box1_1_3>
-            </Box1_1>
-          </Box1>
-          <Box1>
-            <Box1_1>
-              <Box1_1_3_4>60k</Box1_1_3_4>
-            </Box1_1>
-            <Box1_1>
-              <Box1_1_3>Platos Servidos</Box1_1_3>
-            </Box1_1>
-          </Box1>
-          <Box1>
-            <Box1_1>
-              <Box1_1_3_4>89k</Box1_1_3_4>
-            </Box1_1>
-            <Box1_1>
-              <Box1_1_3>Clientes Felices</Box1_1_3>
-            </Box1_1>
-          </Box1>
+          {listElements.map((element) => (
+            <BoxWrapper key={element}>
+              <ListElementWrapper>
+                <ListElement>{element.listElement}</ListElement>
+              </ListElementWrapper>
+              <ListElementWrapper>
+                {element.listElementSubtitle}
+              </ListElementWrapper>
+            </BoxWrapper>
+          ))}
         </BoxContent>
       </Container>
     </BackgraoundSection>
@@ -64,12 +48,12 @@ const BoxContent = styled.div`
   height: 100px;
   width: 100%;
 `;
-const Box1 = styled.div`
+const BoxWrapper = styled.div`
   height: 100%;
   width: 100%;
 `;
 
-const Box1_1 = styled.div`
+const ListElementWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -77,9 +61,7 @@ const Box1_1 = styled.div`
   font-size: 20px;
 `;
 
-const Box1_1_3 = styled.div``;
-
-const Box1_1_3_4 = styled.div`
+const ListElement = styled.div`
   font-size: 40px;
   padding-bottom: 20px;
 `;
