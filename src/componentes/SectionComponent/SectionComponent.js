@@ -21,7 +21,7 @@ export const SectionComponent = () => {
 };
 
 const SectionWrapper = styled.section`
-  background-image: url("./imagenes/backgraound-section.png");
+  background-image: url("./imagenes/section1.jpg");
   content: "";
   height: 700px;
   width: 100%;
